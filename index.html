@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals-Collector-Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+    <h1>Chaos Emerald Collector!</h1>
+
+<h2 >Rules of the Game</h2>
+<p>You will be given a random number at the start of the game.  There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.  You win the game by matching your total score to the ramdom number, you lose the game if your total score goes above the random number.</p>
+<p>The value of each crystal is hidden from you until you click on it.  Each time when the game starts, the game will change the values of each crystal.</p>
+<br>
+<div class="row container">
+<h3 class="col-sm-3"></h3>
+<h3 class="col-sm-3">Target Score: 
+  <span id='targetScore'>0</span>
+  </h3>
+  <h3 class="col-sm-2 ">Your Score: <span id='yourScore'>0</span>
+  </h3>
+
+  <br>
+  
+<div class="row">
+    <input type="image" src="assests/images/chaosred.jpg" name="red" class="crystal" id="red" />
+    <input type="image" src="assests/images/chaosblue.jpg" name="blue" class="crystal" id="blue" />
+    <input type="image" src="assests/images/greenchaos.jpg" name="green" class="crystal" id="green" />
+    <input type="image" src="assests/images/chaosyellow.jpg" name="yellow" class="crystal" id="yellow" />
+
+  
+</div>
+<br>
+    <div class="row container">
+      <h6>Wins:</h6>
+    </div>
+    <div class="row container">
+      <h6>loses:</h6>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assests/javascript/game.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+  background-image: url("../images/sonic.jpg");
+}
+.crystal {
+  display: block;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  background: transparent;
+}
+.crystal img {
+  display: block; /* Otherwise it keeps some space around baseline */
+  min-width: 100%; /* Scale up to fill container width */
+  min-height: 100%; /* Scale up to fill container height */
+  background: transparent;
+}
+#red {
+  float: left;
+  background: transparent;
+}
+#blue {
+  float: left;
+  background: transparent;
+}
+#green {
+  float: left;
+  background: transparent;
+}
+#yellow {
+  float: left;
+  background: transparent;
+}
