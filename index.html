@@ -7,40 +7,51 @@
     <title>Crystals-Collector-Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assests/css/style.css">
-</head>
-<body>
-    <h1>Chaos Emerald Collector!</h1>
-
-<h2 >Rules of the Game</h2>
-<p>You will be given a random number at the start of the game.  There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.  You win the game by matching your total score to the ramdom number, you lose the game if your total score goes above the random number.</p>
-<p>The value of each crystal is hidden from you until you click on it.  Each time when the game starts, the game will change the values of each crystal.</p>
-<br>
-<div class="row container">
-<h3 class="col-sm-3"></h3>
-<h3 class="col-sm-3">Target Score: 
-  <span id='targetScore'>0</span>
-  </h3>
-  <h3 class="col-sm-2 ">Your Score: <span id='yourScore'>0</span>
-  </h3>
-
-  <br>
-  
-<div class="row">
-    <input type="image" src="assests/images/chaosred.jpg" name="red" class="crystal" id="red" />
-    <input type="image" src="assests/images/chaosblue.jpg" name="blue" class="crystal" id="blue" />
-    <input type="image" src="assests/images/greenchaos.jpg" name="green" class="crystal" id="green" />
-    <input type="image" src="assests/images/chaosyellow.jpg" name="yellow" class="crystal" id="yellow" />
-
-  
-</div>
-<br>
-    <div class="row container">
-      <h6>Wins:</h6>
+    <link href="https://fonts.googleapis.com/css?family=Exo:800i" rel="stylesheet">
+  </head>
+  <body>
+    <div class="rules gameFont">  
+      <h1>Chaos Emerald Collector!</h1>
+      
+      <h2 >Rules of the Game</h2>
+      <p>Help Sonic collect the chaos emeralds and match the target score to win! Be warned, Dr. Eggman changes the values of each chaos emerald before each game.</p>
+      <p>Gotta GO FAST!!!! </p>
     </div>
-    <div class="row container">
-      <h6>loses:</h6>
-    </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="assests/javascript/game.js" type="text/javascript"></script>
-</body>
-</html>
+    <br>
+    <div class="row container gameFont">
+      <h3 class="col-sm-4">Target Score: 
+        <span id='targetScore'>0</span>
+      </h3>
+      <h3 class="col-sm-4 ">Your Score: <span id='yourScore'>0</span>
+      </h3>
+      
+      <br>
+      
+      <div class="row">
+        <input type="image" src="assests/images/chaosred.jpg" name="redpic" class="crystal" id="red" />
+        <input type="image" src="assests/images/chaosblue.jpg" name="bluepic" class="crystal" id="blue" />
+        <input type="image" src="assests/images/greenchaos.jpg" name="greenpic" class="crystal" id="green" />
+        <input type="image" src="assests/images/chaosyellow.jpg" name="yellowpic" class="crystal" id="yellow" />
+        
+        
+      </div>
+      <br>
+      <!-- renamed my id's for wins and loses... ran into an issue  when the text and id were the same word it wouldn't update -->
+      <div class="row container gameFont">
+          <h3 class="col-sm-4">Wins: 
+            <span id='win'>0</span>
+          </h3>
+          <h3 class="col-sm-4 ">Loses: <span id='lose'>0</span>
+          </h3>
+      <!-- <div class="row container" id="wins">
+        <h3>Wins:</h3>
+      </div>
+      <div class="row container" id="losses">
+        <h3>Losses:</h3>
+      </div> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="assests/javascript/game.js" type="text/javascript"></script>
+      <embed name="sonicSong" src="assests/images/Sonic the Hedgehog-Green Hill Zone Theme.mp3" loop="true" autostart="true" style="visibility:hidden;"/>
+<!-- trying to figure out how to loop this song but i can't get it down! found this function on stackflow -->
+    </body>
+    </html>

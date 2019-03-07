@@ -1,11 +1,14 @@
 body {
   background-image: url("../images/sonic.jpg");
+  font-family: "Exo", sans-serif;
+  text-align: left;
+  margin-right: 50%;
 }
 .crystal {
   display: block;
   overflow: hidden;
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   margin: auto;
   background: transparent;
 }
@@ -31,3 +34,9 @@ body {
   float: left;
   background: transparent;
 }
+.gameFont {
+  color: white;
+}
+/* #win {
+  margin-top: 50px;
+} */
